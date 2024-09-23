@@ -117,9 +117,9 @@ namespace MapaSala.Formularios
             this.dtGridDisciplina.AllowUserToAddRows = false;
             this.dtGridDisciplina.AllowUserToDeleteRows = false;
             this.dtGridDisciplina.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtGridDisciplina.BackgroundColor = System.Drawing.Color.Pink;
+            this.dtGridDisciplina.BackgroundColor = System.Drawing.Color.CadetBlue;
             this.dtGridDisciplina.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtGridDisciplina.Location = new System.Drawing.Point(26, 145);
+            this.dtGridDisciplina.Location = new System.Drawing.Point(22, 129);
             this.dtGridDisciplina.Margin = new System.Windows.Forms.Padding(5);
             this.dtGridDisciplina.Name = "dtGridDisciplina";
             this.dtGridDisciplina.ReadOnly = true;
@@ -166,7 +166,7 @@ namespace MapaSala.Formularios
             // 
             // txtPesquisa
             // 
-            this.txtPesquisa.Location = new System.Drawing.Point(86, 114);
+            this.txtPesquisa.Location = new System.Drawing.Point(89, 98);
             this.txtPesquisa.Name = "txtPesquisa";
             this.txtPesquisa.Size = new System.Drawing.Size(207, 23);
             this.txtPesquisa.TabIndex = 11;
@@ -175,7 +175,7 @@ namespace MapaSala.Formularios
             // lblPesquisa
             // 
             this.lblPesquisa.AutoSize = true;
-            this.lblPesquisa.Location = new System.Drawing.Point(83, 94);
+            this.lblPesquisa.Location = new System.Drawing.Point(86, 78);
             this.lblPesquisa.Name = "lblPesquisa";
             this.lblPesquisa.Size = new System.Drawing.Size(76, 17);
             this.lblPesquisa.TabIndex = 12;
@@ -185,7 +185,8 @@ namespace MapaSala.Formularios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1066, 692);
+            this.BackColor = System.Drawing.Color.PowderBlue;
+            this.ClientSize = new System.Drawing.Size(1065, 457);
             this.Controls.Add(this.lblPesquisa);
             this.Controls.Add(this.txtPesquisa);
             this.Controls.Add(this.button1);

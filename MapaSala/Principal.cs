@@ -16,6 +16,7 @@ namespace MapaSala
         public Principal()
         {
             InitializeComponent();
+   
         }
 
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
@@ -61,6 +62,11 @@ namespace MapaSala
         {
             frmCursoDisciplinacs x = new frmCursoDisciplinacs();
             x.ShowDialog();
+        }
+
+        private void Principal_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

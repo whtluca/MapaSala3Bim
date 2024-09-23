@@ -153,7 +153,7 @@ namespace MapaSala.Formularios
             // dtGridSalas
             // 
             this.dtGridSalas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtGridSalas.BackgroundColor = System.Drawing.Color.Pink;
+            this.dtGridSalas.BackgroundColor = System.Drawing.Color.CadetBlue;
             this.dtGridSalas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtGridSalas.Location = new System.Drawing.Point(19, 221);
             this.dtGridSalas.Margin = new System.Windows.Forms.Padding(5);
@@ -228,6 +228,7 @@ namespace MapaSala.Formularios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.PowderBlue;
             this.ClientSize = new System.Drawing.Size(1170, 692);
             this.Controls.Add(this.txtPesquisa);
             this.Controls.Add(this.lblPesquisa);
