@@ -16,7 +16,7 @@ namespace MapaSala
         public Principal()
         {
             InitializeComponent();
-   
+
         }
 
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
