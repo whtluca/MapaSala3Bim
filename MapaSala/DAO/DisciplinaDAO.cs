@@ -13,7 +13,7 @@ namespace MapaSala.DAO
     public class DisciplinaDAO
     {
         private string LinhaConexao = "Server=LS05MPF;Database=AULA_DS;User Id=sa;Password=admsasql;";
-        private SqlConnection Conexao; //comunicacao programa/banco
+        private SqlConnection Conexao; 
 
         public DisciplinaDAO()
         {
@@ -30,7 +30,7 @@ namespace MapaSala.DAO
             comando.Parameters.Add(parametro1);
             comando.Parameters.Add(parametro2);
             comando.Parameters.Add(parametro3);
-            comando.ExecuteNonQuery(); //nao retorna nd
+            comando.ExecuteNonQuery();
             Conexao.Close();
         }
         public DataTable PreencherComboBox()
@@ -45,12 +45,12 @@ namespace MapaSala.DAO
 
                 try
                 {
-                    // Preenche o DataTable com os dados da consulta
+                    
                     adapter.Fill(dataTable);
                 }
                 catch (Exception ex)
                 {
-                    // Lida com erros, se necessário
+                    
                     throw new Exception("Erro ao acessar os dados: " + ex.Message);
                 }
             }
@@ -68,13 +68,13 @@ namespace MapaSala.DAO
 
             SqlDataReader Leitura = Comando.ExecuteReader();
 
-            foreach (var atributos in typeof(ProfessoresEntidade).GetProperties())//laço de reoetição para ler listas
+            foreach (var atributos in typeof(ProfessoresEntidade).GetProperties())
             {
                 dt.Columns.Add(atributos.Name);
             }
-            if (Leitura.HasRows) //a linha existe? true or false
+            if (Leitura.HasRows) 
             {
-                while (Leitura.Read())//para pegar mais de um registro, faz uma consulta
+                while (Leitura.Read())
                 {
                     DisciplinaEntidade d = new DisciplinaEntidade();
                     d.Id = Convert.ToInt32(Leitura[0]);
@@ -104,13 +104,13 @@ namespace MapaSala.DAO
             SqlCommand Comando = new SqlCommand(query, Conexao);
             SqlDataReader Leitura = Comando.ExecuteReader();
 
-            foreach (var atributos in typeof(DisciplinaEntidade).GetProperties())//laço de reoetição para ler listas
+            foreach (var atributos in typeof(DisciplinaEntidade).GetProperties())
             {
                 dt.Columns.Add(atributos.Name);
             }
-            if (Leitura.HasRows) //a linha existe? true or false
+            if (Leitura.HasRows) 
             {
-                while (Leitura.Read())//para pegar mais de um registro, faz uma consulta
+                while (Leitura.Read())
                 {
                     DisciplinaEntidade d = new DisciplinaEntidade();
                     d.Id = Convert.ToInt32(Leitura[0]);

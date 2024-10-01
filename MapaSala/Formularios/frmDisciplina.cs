@@ -40,7 +40,7 @@ namespace MapaSala.Formularios
             d.Id = Convert.ToInt32(numId.Value);
             d.Nome = txtNomeDisciplina.Text;
             d.Sigla = txtSigla.Text;
-
+            d.Ativo = false;
             dao.Inserir(d);
             dtGridDisciplina.DataSource = dao.ObterDisciplinas();
             LimparCampos();

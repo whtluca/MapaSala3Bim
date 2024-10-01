@@ -14,7 +14,7 @@ namespace Model.Entitidades
         public int Id { get; set; }
         public string Nome { get; set; }
         public string Sigla { get; set; }
-        public string Ativo { get; set; }
+        public bool Ativo { get; set; }
 
         public object[] Linha()
         {
