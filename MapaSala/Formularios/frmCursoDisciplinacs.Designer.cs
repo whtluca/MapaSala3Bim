@@ -87,6 +87,7 @@ namespace MapaSala.Formularios
             this.dtCursoDisciplina.Name = "dtCursoDisciplina";
             this.dtCursoDisciplina.Size = new System.Drawing.Size(739, 255);
             this.dtCursoDisciplina.TabIndex = 6;
+            this.dtCursoDisciplina.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtCursoDisciplina_CellDoubleClick);
             // 
             // CbxDisciplinas
             // 

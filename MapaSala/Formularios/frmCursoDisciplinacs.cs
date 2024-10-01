@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace MapaSala.Formularios
 {
     public partial class frmCursoDisciplinacs : Form
@@ -58,5 +59,7 @@ namespace MapaSala.Formularios
         {
             dtCursoDisciplina.DataSource = dao.Pesquisar(txtPesquisa.Text);
         }
+
+        
     }
 }
