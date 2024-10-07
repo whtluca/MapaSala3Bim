@@ -97,7 +97,13 @@ namespace MapaSala.Formularios
 
         private void dtGridDisciplina_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            frmEditarDisciplinas
+            frmEditarDisciplinas editar = new frmEditarDisciplinas();
+            editar.ShowDialog();
+        }
+
+        private void txtNomeDisciplina_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

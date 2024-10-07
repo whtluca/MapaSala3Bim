@@ -65,6 +65,7 @@ namespace MapaSala.Formularios
             this.txtNomeDisciplina.Name = "txtNomeDisciplina";
             this.txtNomeDisciplina.Size = new System.Drawing.Size(243, 23);
             this.txtNomeDisciplina.TabIndex = 1;
+            this.txtNomeDisciplina.TextChanged += new System.EventHandler(this.txtNomeDisciplina_TextChanged);
             // 
             // txtSigla
             // 
